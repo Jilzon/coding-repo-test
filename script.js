@@ -32,9 +32,9 @@ function nextSlide() {
     showSlide(currentIndex + 1);
 }
 
-// function startAutoSlide() {
-//     intervalId = setInterval(nextSlide, 4000);
-// }
+function startAutoSlide() {
+    intervalId = setInterval(nextSlide, 4000);
+}
 
 function stopAutoSlide() {
     clearInterval(intervalId);
