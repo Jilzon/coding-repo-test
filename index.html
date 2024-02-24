@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Treva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
+
+    <header>
+        <div class="container header-block">
+            <div class="logo">
+                <a href="">
+                    <img src="images/Logo.svg" alt="Logo">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- spotlight section -->
+    <section class="spotlight-section">
+        <div class="container spotlight-section-inner">
+            <div class="slider">
+                <div class="slide">
+                    <div class="spotlight-content-block">
+                        <h2>Lorem ipsum dolor sit amet consectetur </h2>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="signup-button">Sign Up Now</a>
+                    </div>
+                    <div>
+                        <img src="images/spotlight-img.png" alt="spotlight-image">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="spotlight-content-block">
+                        <h2>Content 2 </h2>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="signup-button">Sign Up Now</a>
+                    </div>
+                    <div>
+                        <img src="images/spotlight-img.png" alt="spotlight-image">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="spotlight-content-block">
+                        <h2>Lorem ipsum dolor sit amet consectetur </h2>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="signup-button">Sign Up Now</a>
+                    </div>
+                    <div>
+                        <img src="images/spotlight-img.png" alt="spotlight-image">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots-container">
+                <!-- Slider Dots -->
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- contact us section -->
+    <section class="contact-us-section">
+        <div class="container contact-img-block">
+            <img src="images/mark.png" alt="mark-icon">
+        </div>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <form id="contact-form" method="post" action="#">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-row form-flex">
+                    <div class="half">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="half">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="topic">Choose a Topic</label>
+                    <select id="topic" name="topic" required>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Customer Support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
     
+
 </body>
+
 </html>
